@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Page selling 6D massage machine" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="MÁY MASSAGE 6D CHÍNH HÃNG" />
+    <meta property="og:description" content="6D Massage Machine Landing Page" />
+    <meta property="og:image" content="../img/logo.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="author" content="hynna" />
+    <title>MÁY MASSAGE 6D CHÍNH HÃNG</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.jpg">
     <link rel="stylesheet" href="/style.css" />
     <script src="/master.js"></script>
     <link
@@ -13,9 +21,9 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="container-sm">
+  <body class="container">
     <section class="row bg-gray px-4">
-      <h2 class="row text-center blink text-danger px-5 fs-1 lh-lg fw-bolder">
+      <h2 class="text-center blink text-danger px-3 fs-1 py-2 fw-bolder">
         DUY NHẤT HÔM NAY FREESHIP VIỆT - ĐÀI
       </h2>
       <div class="col-12">
@@ -32,7 +40,11 @@
               aria-current="true"
               aria-label="Slide 1"
             >
-              <img class="d-block w-100" src="./img/test.jpg" alt="" />
+              <img
+                class="d-block w-100"
+                src="./img/test2.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
             </li>
             <li
               data-bs-target="#carouselProduct"
@@ -40,7 +52,11 @@
               aria-label="Slide 2"
               class="w-25 h-auto"
             >
-              <img class="d-block w-100" src="./img/test.jpg" alt="" />
+              <img
+                class="d-block w-100"
+                src="./img/test.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
             </li>
             <li
               data-bs-target="#carouselProduct"
@@ -48,18 +64,34 @@
               aria-label="Slide 3"
               class="w-25 h-auto"
             >
-              <img class="d-block w-100" src="./img/test.jpg" alt="" />
+              <img
+                class="d-block w-100"
+                src="./img/test.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
             </li>
           </ul>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./img/test.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="./img/test2.jpg"
+                class="d-block w-100"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
             </div>
             <div class="carousel-item">
-              <img src="./img/test.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="./img/test.jpg"
+                class="d-block w-100"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
             </div>
             <div class="carousel-item">
-              <img src="./img/test.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="./img/test.jpg"
+                class="d-block w-100"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
             </div>
           </div>
           <button
@@ -173,22 +205,30 @@
           <div class="drop-down text-danger text-center fw-bold fs-3">
             Ưu đãi kết thúc sau
           </div>
-          <div class="row">
-            <div class="col-3">
-              <div class="col-12"></div>
-              <div class="fw-bold">Ngày</div>
+          <div class="row justify-content-evenly gap-2 my-2">
+            <div
+              class="col-2 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="fw-bold timer"><span id="days">00</span></div>
+              <div class="fw-bold text-center">Ngày</div>
             </div>
-            <div class="col-3">
-              <div class="col-12"></div>
-              <div class="fw-bold">Giờ</div>
+            <div
+              class="col-2 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="fw-bold timer"><span id="hours">00</span></div>
+              <div class="fw-bold text-center">Giờ</div>
             </div>
-            <div class="col-3">
-              <div class="col-12"></div>
-              <div class="fw-bold">Phút</div>
+            <div
+              class="col-2 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="fw-bold timer"><span id="minutes">06</span></div>
+              <div class="fw-bold text-center">Phút</div>
             </div>
-            <div class="col-3">
-              <div class="col-12"></div>
-              <div class="fw-bold">Giây</div>
+            <div
+              class="col-2 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="fw-bold timer"><span id="second">33</span></div>
+              <div class="fw-bold text-center">Giây</div>
             </div>
           </div>
           <p class="text-center">
@@ -205,6 +245,7 @@
           class="zoom-shake col-6 buy-btn text-decoration-none rounded-5 p-1"
           >MUA NGAY</a
         >
+        <div class="position-absolute" id="clicking"></div>
         <div class="col-6 fs-4 fw-bold">Số lượng có hạn</div>
       </div>
       <div
@@ -244,7 +285,7 @@
           THÔNG TIN SẢN PHẨM
         </p>
       </div>
-      <img src="./img/test.jpg" alt="may-massage-6d-nhat-ban-chinh-hang" />
+      <img src="./img/test2.jpg" alt="may-massage-6d-nhat-ban-chinh-hang" />
       <h3 class="row text-center fw-bold px-5 my-3">
         Bạn và người thân thoải mái thư giãn mỗi ngày
       </h3>
@@ -269,7 +310,7 @@
       <div
         class="row review-box py-4 justify-content-between align-items-center gap-0"
       >
-        <div class="col-3 text-danger d-flex flex-nowrap">
+        <div class="col-3 col-md-2 text-danger d-flex flex-nowrap">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -331,7 +372,7 @@
             />
           </svg>
         </div>
-        <div class="col-8 text-secondary">
+        <div class="col-8 col-md-9 text-secondary">
           <div class="row justify-content-evenly gap-1">
             <div class="col-3 review-box-s text-nowrap">Tất cả</div>
             <div class="col-4 review-box-s text-nowrap">5 sao (7168)</div>
@@ -345,242 +386,285 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="reviewer-avatar" id="reviewer-avatar01"></div>
-        <div class="text-red">Linh Hoàng</div>
-        <div class="text-danger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-        </div>
-        <p class="fst-italic">
-          Xịn sò cực kỳ ý. Cầm nặng tay và chắc chắn lắm, phụ kiện đi kèm đầy
-          đủ. Cưng lắm chuẩn bị đặt lần hai. Công suất máy siêu mạnh
-        </p>
-        <div></div>
-        <div class="row gap-2">
-          <span class="review-text text-secondary"
-            >Chất lượng sản phẩm tuyệt vời</span
-          >
-          <span class="review-text text-secondary"
-            >Thời gian giao hàng nhanh</span
-          >
-          <span class="review-text text-secondary">Rất đáng tiền</span>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="reviewer-avatar" id="reviewer-avatar02"></div>
-        <div class="text-red">Thịnh Bùi</div>
-        <div class="text-danger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-        </div>
-        <p class="fst-italic">
-          Con máy bọc da PU nhìn xịn phết, mình dân văn phòng hay bị đau cổ dùng
-          thấy giảm hẳn. Nó bóp vai như tay người luôn, cho shop 5 sao
-        </p>
-        <div></div>
-        <div class="row gap-2">
-          <span class="review-text text-secondary"
-            >Chất lượng sản phẩm tuyệt vời</span
-          >
-          <span class="review-text text-secondary"
-            >Thời gian giao hàng nhanh</span
-          >
-          <span class="review-text text-secondary">Rất đáng tiền</span>
+        <div class="d-flex">
+          <div class="reviewer-avatar" id="reviewer-avatar01"></div>
+          <div>
+            <div class="text-red">Linh Hoàng</div>
+
+            <div class="text-danger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+            </div>
+            <p class="fst-italic">
+              Xịn sò cực kỳ ý. Cầm nặng tay và chắc chắn lắm, phụ kiện đi kèm
+              đầy đủ. Cưng lắm chuẩn bị đặt lần hai. Công suất máy siêu mạnh
+            </p>
+            <div class="row my-4">
+              <img
+                class="col-6"
+                src="./img/test.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              /><img
+                class="col-6"
+                src="./img/test2.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
+            </div>
+            <div class="row gap-2">
+              <span class="review-text text-secondary"
+                >Chất lượng sản phẩm tuyệt vời</span
+              >
+              <span class="review-text text-secondary"
+                >Thời gian giao hàng nhanh</span
+              >
+              <span class="review-text text-secondary">Rất đáng tiền</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row mt-4">
-        <div class="reviewer-avatar" id="reviewer-avatar03"></div>
-        <div class="text-red">Bích Ngọc</div>
-        <div class="text-danger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-star-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-            />
-          </svg>
+        <div class="d-flex">
+          <div class="reviewer-avatar" id="reviewer-avatar02"></div>
+          <div>
+            <div class="text-red">Thịnh Bùi</div>
+            <div class="text-danger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+            </div>
+            <p class="fst-italic">
+              Con máy bọc da PU nhìn xịn phết, mình dân văn phòng hay bị đau cổ
+              dùng thấy giảm hẳn. Nó bóp vai như tay người luôn, cho shop 5 sao
+            </p>
+            <div class="row my-4">
+              <img
+                class="col-6"
+                src="./img/test.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              /><img
+                class="col-6"
+                src="./img/test2.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
+            </div>
+            <div class="row gap-2">
+              <span class="review-text text-secondary"
+                >Chất lượng sản phẩm tuyệt vời</span
+              >
+              <span class="review-text text-secondary"
+                >Thời gian giao hàng nhanh</span
+              >
+              <span class="review-text text-secondary">Rất đáng tiền</span>
+            </div>
+          </div>
         </div>
-        <p class="fst-italic">
-          Sản phẩm xứng đáng để mua. Mình mua về sử dụng nó thật tuyệt vời
-        </p>
-        <div></div>
-        <div class="row gap-2">
-          <span class="review-text text-secondary"
-            >Chất lượng sản phẩm tuyệt vời</span
-          >
-          <span class="review-text text-secondary"
-            >Thời gian giao hàng nhanh</span
-          >
-          <span class="review-text text-secondary">Rất đáng tiền</span>
+      </div>
+      <div class="row mt-4">
+        <div class="d-flex">
+          <div class="reviewer-avatar" id="reviewer-avatar03"></div>
+          <div>
+            <div class="text-red">Bích Ngọc</div>
+            <div class="text-danger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+            </div>
+            <p class="fst-italic">
+              Sản phẩm xứng đáng để mua. Mình mua về sử dụng nó thật tuyệt vời
+            </p>
+            <div class="row my-4">
+              <img
+                class="col-6"
+                src="./img/test.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              /><img
+                class="col-6"
+                src="./img/test2.jpg"
+                alt="may-massage-6d-nhat-ban-chinh-hang"
+              />
+            </div>
+            <div class="row gap-2">
+              <span class="review-text text-secondary"
+                >Chất lượng sản phẩm tuyệt vời</span
+              >
+              <span class="review-text text-secondary"
+                >Thời gian giao hàng nhanh</span
+              >
+              <span class="review-text text-secondary">Rất đáng tiền</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
