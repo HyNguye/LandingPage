@@ -1,0 +1,230 @@
+.bg-gray {
+  background-color: rgb(217 217 217);
+}
+.text-red{
+  color: rgb(255, 55, 55);
+  font-weight: 700;
+}
+.right-0{
+  right: 0;
+}
+footer {
+  background-image: url(./img/footer-background.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: white;
+}
+.guarantee-policy{
+  background-image: url(./img/guarantee-policy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px !important;
+  height: 380px !important;
+}
+
+.footer-logo{
+  width: 200px;
+  height: 44px;
+}
+#footer-logo-1{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url(./img/visa-logo.svg);
+}
+#footer-logo-2{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url(./img/mastercard-logo.svg);
+}
+#footer-logo-3{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url(./img/bo-cong-thuong-logo.svg);
+}
+#sticky-logo {
+  width: 100px;
+  height: 100px;
+}
+.toast {
+  position: fixed;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050; 
+  
+}
+#user-img{
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+.carousel {
+  position: relative;
+  padding-bottom: 120px;
+}
+.carousel-indicators {
+  list-style: none;
+  bottom: -110px;
+  left: 50%;
+  z-index: 2;
+  margin-bottom: 0 !important;
+}
+.page-break {
+  width: 100%;
+  border-top: 1px solid black;
+}
+.orange-title {
+  color: white;
+  background-color: rgb(255, 98, 1);
+  border-radius: 5px;
+  padding: 12px 0;
+}
+.rounded-24px {
+  border-radius: 24px;
+}
+.buy-btn {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: rgb(241, 243, 244);
+  text-align: center;
+  background-color: rgb(255, 1, 1);
+  border: 1px solid black;
+  padding: 4px 0;
+}
+.review-box {
+  background-image: linear-gradient(rgb(253, 251, 251), rgb(234, 237, 238));
+  background-color: initial;
+  background-size: initial;
+  background-origin: initial;
+  background-position: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  -webkit-background-clip: initial;
+  border-width: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb(255, 55, 55);
+}
+.review-box-s {
+  font-size: 13px;
+  background-image: linear-gradient(rgb(253, 251, 251), rgb(234, 237, 238));
+  background-color: initial;
+  background-size: initial;
+  background-origin: initial;
+  background-position: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  -webkit-background-clip: initial;
+  border-width: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb(255, 55, 55);
+}
+.review-text{
+  border-width: 1px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgb(166, 166, 166);
+  padding: 6px;
+  width: fit-content !important;
+}
+/*animation*/
+.blink {
+  animation: blink 1s infinite;
+}
+.drop-down {
+  animation: dropDown 1s ease-in-out infinite;
+}
+.shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
+.zoom-shake {
+  animation: zoom-shake 1.2s ease-in-out infinite;
+  transform-origin: center; 
+}
+@keyframes dropDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg); /* Không xoay ở đầu */
+  }
+  25% {
+    transform: rotate(5deg); /* Xoay nhẹ sang phải */
+  }
+  50% {
+    transform: rotate(-5deg); /* Xoay nhẹ sang trái */
+  }
+  75% {
+    transform: rotate(5deg); /* Xoay lại sang phải */
+  }
+  100% {
+    transform: rotate(0deg); /* Quay về vị trí ban đầu */
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.7); /* Ban đầu kích thước bình thường */
+  }
+  50% {
+    transform: scale(1); /* Phóng to */
+  }
+  100% {
+    transform: scale(0.7); /* Quay lại kích thước bình thường */
+  }
+}
+@keyframes zoom-shake {
+  0% {
+    transform: rotate(0deg) scale(0.7);  /* Không xoay ở đầu */
+  }
+  25% {
+    transform: rotate(5deg); /* Xoay nhẹ sang phải */
+  }
+  50% {
+    transform: rotate(-5deg) scale(1); /* Xoay nhẹ sang trái */
+  }
+  60% {
+    transform: rotate(5deg); /* Xoay lại sang phải */
+  }
+  70% {
+    transform: rotate(-5deg); /* Xoay lại sang phải */
+  }
+  75% {
+    transform: rotate(5deg); /* Xoay lại sang phải */
+  }
+  80% {
+    transform: rotate(-5deg); /* Xoay lại sang phải */
+  }
+  90% {
+    transform: rotate(5deg); /* Xoay lại sang phải */
+  }
+  100% {
+    transform: rotate(0deg) scale(0.9); /* Quay về vị trí ban đầu */
+  }
+}
